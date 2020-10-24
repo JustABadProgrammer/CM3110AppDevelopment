@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WallActivity">
+
+
+    <EditText
+        android:id="@+id/plTxt_sceneName"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:autofillHints="@string/plTxt_sceneNameTxt"
+        android:ems="10"
+        android:hint="@string/plTxt_sceneNameTxt"
+        android:inputType="textPersonName"
+        android:singleLine="false"
+        app:layout_constraintEnd_toStartOf="@+id/imView_mainWall"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sceneName" />
+
+    <ImageView
+        android:id="@+id/imView_mainWall"
+        android:layout_width="598dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#9C9B9B"
+        android:contentDescription="@string/imView_mainWallDesc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_addPoster"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/btn_addPoster"
+        app:layout_constraintBottom_toTopOf="@+id/btn_removePoster"
+        app:layout_constraintEnd_toStartOf="@+id/imView_mainWall"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="@string/btn_addPoster" />
+
+    <Button
+        android:id="@+id/btn_removePoster"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/btn_removePoster"
+        app:layout_constraintBottom_toTopOf="@+id/btn_changeWallImage"
+        app:layout_constraintEnd_toStartOf="@+id/imView_mainWall"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_saveAndExitWall"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:contentDescription="@string/btn_saveAndExit"
+        app:layout_constraintEnd_toStartOf="@+id/imView_mainWall"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
+    <Button
+        android:id="@+id/btn_changeWallImage"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:text="@string/btn_changeWallImage"
+        app:layout_constraintBottom_toBottomOf="@+id/imView_mainWall"
+        app:layout_constraintEnd_toStartOf="@+id/imView_mainWall"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_sceneName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/tv_sceneName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_saveAndExitWall"
+        tools:text="@string/tv_sceneName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WallActivity">
+
+
+    <EditText
+        android:id="@+id/plTxt_sceneName"
+        android:autofillHints="@string/plTxt_sceneNameTxt"
+        android:layout_width="176dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:singleLine="false"
+        android:hint="@string/plTxt_sceneNameTxt"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_sceneName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_sceneName" />
+
+    <ImageView
+        android:id="@+id/imView_mainWall"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#8A8585"
+        android:contentDescription="@string/imView_mainWallDesc"
+        app:layout_constraintBottom_toTopOf="@+id/btn_removePoster"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plTxt_sceneName" />
+
+    <Button
+        android:id="@+id/btn_addPoster"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/btn_addPoster"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="@string/btn_addPoster" />
+
+    <Button
+        android:id="@+id/btn_removePoster"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/btn_removePoster"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_changeWallImage"
+        app:layout_constraintStart_toEndOf="@+id/btn_addPoster" />
+
+    <ImageButton
+        android:id="@+id/btn_saveAndExitWall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/btn_saveAndExit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
+    <Button
+        android:id="@+id/btn_changeWallImage"
+        android:layout_width="123dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/btn_changeWallImage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_sceneName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/tv_sceneName"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_saveAndExitWall"
+        app:layout_constraintEnd_toStartOf="@+id/plTxt_sceneName"
+        app:layout_constraintTop_toTopOf="@+id/btn_saveAndExitWall"
+        tools:text="@string/tv_sceneName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

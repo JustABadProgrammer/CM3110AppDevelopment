@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Wall Designer</string>
+    <string name="btn_addNewWall">Add New Scene</string>
+    <string name="btn_addPoster">Add Poster</string>
+    <string name="plTxt_sceneName">Name</string>
+    <string name="btn_removePoster">Remove Poster</string>
+    <string name="tv_sceneName">Scene Name:</string>
+    <string name="btn_changeWallImage">Edit Wall Image</string>
+    <string name="imView_mainWallDesc">This is the main canvas where the wall will be loaded</string>
+    <string name="btn_saveAndExit">Save and exit button</string>
+    <string name="plTxt_sceneNameTxt">Scene Name</string>
+    <string name="tv_newPosterTitle">Add New Poster</string>
+    <string name="tv_newPosterSize">Poster Size:</string>
+    <string name="tv_newPosterSize1">Or Manual:</string>
+    <string name="tv_newPosterSize3">Pre-Defined:</string>
+    <string name="tv_inches1">inches</string>
+    <string name="tv_newPosterImage">Poster Image:</string>
+    <string name="tv_newPosterImage1">Get poster from the internet:</string>
+    <string name="tv_newPosterImage2">Upload from Gallery:</string>
+    <string name="pt_movieName">Movie Name</string>
+    <string name="txtNum_Width">24</string>
+    <string name="txtNum_Height">36</string>
+    <string name="btn_searchMovie">Search</string>
+    <string name="tv_heightInches">36</string>
+    <string name="tv_widthInches">24</string>
+    <string name="btn_done">Confirm Poster</string>
+
+    <string name="btn_deleteScene">Delete</string>
+    <string name="btn_openScene">Open</string>
+
+</resources>
